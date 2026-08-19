@@ -1,6 +1,6 @@
-![Tasty Bytes thumbnail](assets/thumbnail.png)
-
 # Tasty Bytes: Recipe Site Traffic Prediction
+
+![Tasty Bytes thumbnail](assets/thumbnail.png)
 
 A precision-first machine learning project that predicts whether a recipe is likely to generate high traffic on the Tasty Bytes recipe platform. The project combines data quality work, exploratory analysis, model comparison, and business-driven threshold optimization to support better homepage recipe selection.
 
@@ -132,15 +132,16 @@ The logistic regression probability outputs were evaluated with a precision-reca
 ```text
 .
 ├── README.md
+├── requirements.txt
 ├── notebook.ipynb
-├── Presentation.pptx
 ├── assets/
-│   └── thumbnail.png       # Add the project thumbnail here
+│   ├── Presentation.pptx
+│   └── thumbnail.png
 └── data/
     └── recipe_site_traffic_2212.csv
 ```
 
-The README references `assets/thumbnail.png` as requested. Add the image file at that path before publishing if it is not already present.
+The presentation and thumbnail are stored in `assets/` so the repository keeps project documentation and visual materials together.
 
 ## Getting Started
 
@@ -148,11 +149,18 @@ The README references `assets/thumbnail.png` as requested. Add the image file at
 
 - Python 3.10 or newer recommended
 - Jupyter Notebook or JupyterLab
-- A Python environment with the packages listed below
+- Git, if you are cloning the repository
 
 ### Installation
 
-Create and activate a virtual environment, then install the project dependencies:
+Clone the repository and move into the project directory:
+
+```bash
+git clone https://github.com/MuhammadTaha1038/Predicting-Recipe-Site-Traffic.git
+cd Predicting-Recipe-Site-Traffic
+```
+
+Create a virtual environment named `.venv`:
 
 ```bash
 python -m venv .venv
@@ -162,17 +170,22 @@ Windows PowerShell:
 
 ```powershell
 .venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 ```
 
 macOS/Linux:
 
 ```bash
 source .venv/bin/activate
-python -m pip install --upgrade pip
-pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 ```
+
+Upgrade `pip` and install all project dependencies from [`requirements.txt`](requirements.txt):
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+If PowerShell blocks activation scripts on Windows, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, then activate the environment again.
 
 ### Run the notebook
 
@@ -219,10 +232,11 @@ This model should support editorial decision-making, not replace it. Recommendat
 
 **Muhammad Taha**
 
-- Email: [contact.taha2005@gmail.com](mailto:contact.taha2005@gmail.com)
-- LinkedIn: [Muhammad Taha](https://linkedin.com/in/muhammad-taha-b88807248/)
-- GitHub: [MuhammadTaha1038](https://github.com/MuhammadTaha1038)
-- Kaggle: [muhammadtaha1038](https://www.kaggle.com/muhammadtaha1038)
+Email: [contact.taha2005@gmail.com](mailto:contact.taha2005@gmail.com)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Taha-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammad-taha-b88807248/)
+[![GitHub](https://img.shields.io/badge/GitHub-MuhammadTaha1038-181717?logo=github&logoColor=white)](https://github.com/MuhammadTaha1038)
+[![Kaggle](https://img.shields.io/badge/Kaggle-muhammadtaha1038-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/muhammadtaha1038)
 
 ## License
 
